@@ -6,3 +6,4 @@ if (document.cookie == "") {
   if (document.cookie != "devicePixelRatio=1") window.location.reload();
 }
 console.log("test");
+console.log(document.cookie);
