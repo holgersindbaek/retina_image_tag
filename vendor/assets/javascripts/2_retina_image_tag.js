@@ -1,4 +1,4 @@
-if (document.cookie == "") {
+if ($.cookie('devicePixelRatio') == "") {
 	console.log("document cookie before - "+document.cookie);
   document.cookie = 'devicePixelRatio = ' + window.devicePixelRatio;
   console.log("document cookie after - "+document.cookie);
