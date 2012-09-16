@@ -2,8 +2,7 @@ module RetinaImageTag
   module ViewHelpers
     
     def retina_image()
-      @retina_image_path = image_path(@file_name.gsub("normal", "retina")+@file_ext)
-      image_tag(@retina_image_path, @options)
+      image_tag(@file_path.sub("normal", "retina"), @options)
     end
     
     
