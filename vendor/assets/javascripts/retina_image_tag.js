@@ -1,9 +1,4 @@
 if ($.cookie('devicePixelRatio') == "") {
-	console.log("document cookie before - "+document.cookie);
-  document.cookie = 'devicePixelRatio = ' + window.devicePixelRatio;
-  console.log("document cookie after - "+document.cookie);
-  console.log("widnow device pixel ratio - "+window.devicePixelRatio);
-  if (document.cookie != "devicePixelRatio=1") window.location.reload();
+	$.cookie('devicePixelRatio', window.devicePixelRatio, { expires: 360, path: '/'});
+  	if ($.cookie('devicePixelRatio') != "1") window.location.reload();
 }
-console.log("test");
-console.log(document.cookie);
